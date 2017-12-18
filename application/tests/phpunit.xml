@@ -1,0 +1,32 @@
+<phpunit bootstrap="bootstrap.php"
+		colors="false"
+		convertErrorsToExceptions="true"
+		convertNoticesToExceptions="false"
+		convertWarningsToExceptions="false"
+		stopOnFailure="false">
+
+	<selenium>
+		<browser name="Firefox" browser="*firefox" />
+	</selenium>
+	<testsuites>
+	    <testsuite name="jobs">
+            <directory>unit/jobs</directory>
+        </testsuite>
+        <testsuite name="jobs.stat">
+            <directory>unit/jobs/stat</directory>
+        </testsuite>
+        <testsuite name="jobs.platform">
+            <directory>unit/jobs/platform</directory>
+        </testsuite>
+		<testsuite name="lua">
+		    <directory>unit/lua</directory>
+		</testsuite>
+		<testsuite name="lua.go">
+		    <file>unit/lua/TtargetLuaGoBaseTest.php</file>
+		    <file>unit/jobs/stat/ClicksJobTest.php</file>
+		</testsuite>
+		<testsuite name="lua.session">
+            <file>unit/lua/TtargetluaSessionExampleTest.php</file>
+        </testsuite>
+    </testsuites>
+</phpunit>

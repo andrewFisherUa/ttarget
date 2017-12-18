@@ -1,0 +1,112 @@
+server {
+    listen 80; ## listen for ipv4
+    server_name mix.serlive.ru;
+    server_name next1.serlive.ru;
+
+    root   /var/www/aliasdocs/core;
+    index  index.html;
+
+    charset utf-8;
+
+    access_log /var/log/nginx/tt-ttarget-access.log;
+    error_log  /var/log/nginx/tt-ttarget-error.log;
+
+    location ^~ /s/ {
+        root /var/www/htdocs;
+        add_header Access-Control-Allow-Origin *;
+        access_log        off;
+        log_not_found     off;
+        expires           off;
+    }
+
+    location ^~ /i/ {
+        root /var/www/htdocs;
+        access_log        off;
+        log_not_found     off;
+        expires           off;
+    }
+
+    location = /show {
+        expires off;
+        #access_log off;
+        log_not_found off;
+        default_type 'application/javascript';
+        lua_code_cache on;
+        content_by_lua_file /var/www/nginx/lua/show.lua;
+    }
+
+    location = /get/ {
+        expires off;
+        #access_log off;
+        log_not_found off;
+        default_type 'application/javascript';
+        lua_code_cache on;
+        set $renderer_version 0;
+        content_by_lua_file /var/www/nginx/lua/get.lua;
+    }
+
+    location = /get.js {
+        expires off;
+        #access_log off;
+        log_not_found off;
+        default_type 'application/javascript';
+        lua_code_cache on;
+        set $renderer_version 1;
+        content_by_lua_file /var/www/nginx/lua/get.lua;
+    }
+
+    location /go {
+        #access_log off;
+        log_not_found off;
+        default_type 'text/html';
+        lua_code_cache on;
+        content_by_lua_file /var/www/nginx/lua/go.lua;
+    }
+
+    location /og {
+        access_log off;
+        log_not_found off;
+        default_type 'text/html';
+        lua_code_cache on;
+        content_by_lua_file /var/www/nginx/lua/offer_go.lua;
+    }
+
+    location = /cpa.js {
+        access_log off;
+        log_not_found off;
+        expires off;
+        default_type 'application/javascript';
+        lua_code_cache on;
+        content_by_lua_file /var/www/nginx/lua/track.lua;
+    }
+
+    location = /track.js {
+        access_log off;
+        log_not_found off;
+        expires off;
+        default_type 'application/javascript';
+        lua_code_cache on;
+        content_by_lua_file /var/www/nginx/lua/track.lua;
+    }
+
+    location = /cpa/click.js {
+        access_log off;
+        log_not_found off;
+        lua_code_cache on;
+        default_type 'application/javascript';
+        content_by_lua_file /var/www/nginx/lua/click.lua;
+    }
+
+    location ~ /\. {
+        access_log off;
+        log_not_found off;
+        deny all;
+    }
+
+    location / {
+        try_files $uri $uri/ =404;
+        log_not_found off;
+        access_log off;
+    }
+}
+

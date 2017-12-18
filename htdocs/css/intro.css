@@ -1,0 +1,83 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+div.master{}
+
+div.clear{clear:both!important;float:none!important;}
+
+div.header{height:80px;}
+div.sub{width:980px;margin:0 auto;}
+div.header div.sub div{float:left;background-color:#FFB900;}
+div.header div.sub div.logo{background:none;}
+div.header div.sub div.logo a{font-size:66px;font-family: Georgia;color:#000;text-decoration:none;}
+div.header div.sub div.address{border: 1px solid #DDDDDD;border-bottom:none;height: 60px;margin: 20px 0 0 190px;}
+div.header div.sub div.address div.phone{font-size: 18px;font-weight: bold;padding: 35px 0 0 8px;}
+div.header div.sub div.address div.address_content p{font-size: 15px;height: 16px;margin:0 15px;}
+div.header div.sub div.address div.address_content p.last{margin-top:6px;}
+
+div.header div.sub div.login{border: 1px solid #DDDDDD;border-bottom:none;height: 75px;margin: 5px 0 0 12px;width:200px;}
+div.header div.sub div.login input, login label{border: 1px solid #DDDDDD;display: block;font-size: 12px;height: 19px;margin-top: 4px;margin-left: 13px;width: 170px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+div.header div.sub div.login input[type="submit"]{width:80px;cursor:pointer;background-color:#eee;}
+
+div.sub_line{background-color: #EF7919;border-top: 1px solid #000000;margin-top: 1px;padding: 7px 0;}
+div.sub_line div.sub{font-size: 20px;font-weight: bold;}
+
+div.partners{height:315px;}
+div.partners div.partners_parent div{float:left;}
+div.partners div.partners_parent div.partners_1{width:320px;height:110px;}
+div.partners div.partners_parent div.partners_2{width:240px;height:80px;}
+
+div.description_header{background-color:#ef7716;border-top:1px solid #000;}
+div.description_header div.sub div{color: #FFFFFF;float: left;font-size: 18px;font-weight: bold;padding: 2px 0;width: 325px;}
+
+div.description div.sub div{background-color: #FFB901;float: left;margin-right: 17px;width: 315px;}
+div.description div.sub div.last{margin-right: 0;}
+div.description div.sub div div{margin: 0 5px;padding-left: 5px;width: 140px;height:100px;}
+
+div.description div.sub div{background-color: #FFB901;float: left;margin-right: 17px;width: 315px;}
+
+div.description_bottom div.sub{background-color: #FFB901;margin-top:5px;padding:5px 10px;width:960px;}

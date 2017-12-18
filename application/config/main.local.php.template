@@ -1,0 +1,47 @@
+<?php
+
+$main = require(dirname(__FILE__).'/main.php');
+$main['modules']['gii'] = array(
+    'class' => 'system.gii.GiiModule',
+    'password' => 'PSTy',
+    'generatorPaths' => array(
+        'ext.gtc', // Gii Template Collection
+    ),
+    'ipFilters' => array('127.0.0.1', '::1'),
+);
+
+$main['components']['db'] = array_merge($main['components']['db'], array(
+    'connectionString' => 'mysql:host=localhost;dbname=teaser_db',
+    'username' => 'root',
+    'password' => '',
+    'enableProfiling'=>true,
+    'enableParamLogging' => true,
+));
+
+$main['components']['mysqli'] = array_merge($main['components']['mysqli'], array(
+    'username'  => $main['components']['db']['username'],
+    'password'  => $main['components']['db']['password'],
+    'database'  => 'teaser_db'
+));
+
+$main['components']['mail']['transportType'] = 'php'/* smtp */;
+//$main['components']['mail']['transportOptions'] = array(
+//    'host' => '',
+//    'username' => '',
+//    'password' => '',
+//    'port' => '25',
+//    //'encryption'=>'tls',
+//);
+
+$main['params'] = array_merge($main['params'], array(
+    'adminEmail' => 'root@localhost',
+    'billingEmail' => 'root@localhost',
+    'notifyEmail' => 'root@localhost',
+    'registrationEmail' => 'root@localhost',
+
+    'teaserImageBaseUrl' => 'http://tt.ttarget.ru/i/t',
+    'teaserLinkBaseUrl' => 'http://tt.ttarget.ru/go?',
+    'offerLinkBaseUrl' => 'http://tt.ttarget.ru/og?',
+    'shortLinkBaseUrl' => 'http://g.ttarget.ru/',
+));
+return $main;

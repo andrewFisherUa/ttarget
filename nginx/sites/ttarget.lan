@@ -1,0 +1,132 @@
+server {
+
+set $country_code "ru";
+set $city_id 9;
+
+    listen 80; ## listen for ipv4
+    server_name ttarget.lan;
+
+    root   /home/ttarget/htdocs;
+    index  index.php;
+
+    charset utf-8;
+
+    access_log /var/log/nginx/tt-ttarget-access.log;
+    error_log  /var/log/nginx/tt-ttarget-error.log;
+
+    location ^~ /s/css/ {
+        add_header Access-Control-Allow-Origin *;
+        access_log        off;
+        log_not_found     off;
+        expires           off;
+    }
+
+    location = /show {
+        expires off;
+        access_log off;
+        log_not_found off;
+        default_type 'application/javascript';
+        lua_code_cache off;
+        content_by_lua_file /home/ttarget/nginx/lua/show.lua;
+    }
+
+    location = /get.js {
+        expires off;
+        default_type 'application/javascript';
+        lua_code_cache off;
+        set $renderer_version 1;
+        content_by_lua_file /home/ttarget/nginx/lua/get.lua;
+    }
+
+    location = /get/ {
+        expires off;
+        access_log off;
+        log_not_found off;
+        default_type 'application/javascript';
+        lua_code_cache off;
+        set $renderer_version 0;
+        content_by_lua_file /home/ttarget/nginx/lua/get.lua;
+    }
+
+    location /go {
+        default_type 'text/html';
+        lua_code_cache off;
+        content_by_lua_file /home/ttarget/nginx/lua/go.lua;
+    }
+	
+	location /og {
+        default_type 'text/html';
+        lua_code_cache off;
+        content_by_lua_file /home/ttarget/nginx/lua/offer_go.lua;
+    }
+
+    location = /cpa.js {
+        expires off;
+        default_type 'application/javascript';
+        lua_code_cache off;
+        content_by_lua_file /home/ttarget/nginx/lua/track.lua;
+    }
+
+    location = /track.js {
+        expires off;
+        default_type 'application/javascript';
+        lua_code_cache off;
+        content_by_lua_file /home/ttarget/nginx/lua/track.lua;
+    }
+
+    location = /cpa/click.js {
+        lua_code_cache off;
+        default_type 'application/javascript';
+        content_by_lua_file /home/ttarget/nginx/lua/click.lua;
+    }
+	
+	location = /pixel.gif {
+        lua_code_cache off;
+        default_type 'image/gif';
+        content_by_lua_file /home/ttarget/nginx/lua/pixel.lua;
+    }
+
+    location = /favicon.ico {
+        log_not_found off;
+        access_log off;
+    }
+
+    # Disable logging for robots.txt
+    location = /robots.txt {
+        allow all;
+        log_not_found off;
+        access_log off;
+    }
+
+    location ~ /\. {
+        access_log off;
+        log_not_found off;
+        deny all;
+    }
+
+    # Статическиое наполнение отдает сам nginx
+    # back-end этим заниматься не должен
+    location ~* \.(jpg|jpeg|gif|png|ico|css|bmp|swf|js|txt)$ {
+        access_log        off;
+        log_not_found     off;
+        expires           5d;
+    }
+
+    location / {
+        try_files       $uri $uri/ /index.php;
+
+        if (!-e $request_filename){
+            rewrite (.*) /index.php;
+        }
+    }
+
+    location ~ \.php$ {
+        try_files $uri =403;
+        fastcgi_buffers 256 8k; # Sets the buffer size to 4k + 256 * 4k = 1028k
+
+        fastcgi_pass    unix:/var/run/ttarget-php-fpm.socket;
+        fastcgi_index   index.php;
+
+        include         fastcgi_params;
+    }
+}

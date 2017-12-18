@@ -1,0 +1,1757 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    background: #f2f2f2;
+    color: #58666f;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    color: #43535d;
+}
+
+h1 {
+    font-size: 30px;
+    color: #43535d;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+hr {
+    border-top: 1px solid #d5d5d5;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.spacer {
+    margin-top: 21px;
+}
+
+.spacer-10 {
+    margin-top: 10px;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.div-like-textarea {
+    font-weight: normal;
+    color: #43535d;
+    background: #FFF;
+    border: 1px solid #d5d5d5;
+    padding: 4px 8px;
+}
+
+.alert-info {
+    background: transparent;
+    color: #ca2a50;
+}
+
+/* Таблицы */
+
+.table {
+    border-collapse: separate;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.table th {
+    font-weight: 600;
+    background: #58666f;
+    color: #ebebeb;
+}
+
+.table th a {
+    color: #ebebeb;
+}
+
+.table th, .table td {
+    padding: 5px 12px;
+    line-height: 19px;
+    border-top: 1px solid #FFF;
+}
+
+.table-bordered {
+    border-radius: 0;
+    border: 0;
+}
+
+.table-shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.table-bordered thead:first-child tr:first-child > th:first-child,
+.table-bordered tbody:first-child tr:first-child > td:first-child,
+.table-bordered tbody:first-child tr:first-child > th:first-child,
+.table-bordered thead:first-child tr:first-child > th:last-child,
+.table-bordered tbody:first-child tr:first-child > td:last-child,
+.table-bordered tbody:first-child tr:first-child > th:last-child,
+.table-bordered thead:last-child tr:last-child > th:first-child,
+.table-bordered tbody:last-child tr:last-child > td:first-child,
+.table-bordered tbody:last-child tr:last-child > th:first-child,
+.table-bordered tfoot:last-child tr:last-child > td:first-child,
+.table-bordered tfoot:last-child tr:last-child > th:first-child,
+.table-bordered thead:last-child tr:last-child > th:last-child,
+.table-bordered tbody:last-child tr:last-child > td:last-child,
+.table-bordered tbody:last-child tr:last-child > th:last-child,
+.table-bordered tfoot:last-child tr:last-child > td:last-child,
+.table-bordered tfoot:last-child tr:last-child > th:last-child,
+.table-bordered caption + thead tr:first-child th:first-child,
+.table-bordered caption + tbody tr:first-child td:first-child,
+.table-bordered colgroup + thead tr:first-child th:first-child,
+.table-bordered colgroup + tbody tr:first-child td:first-child,
+.table-bordered caption + thead tr:first-child th:last-child,
+.table-bordered caption + tbody tr:first-child td:last-child,
+.table-bordered colgroup + thead tr:first-child th:last-child,
+.table-bordered colgroup + tbody tr:first-child td:last-child {
+    border-radius: 0;
+}
+
+.table-bordered tr td:first-child, .table-bordered tr th:first-child {
+    border-left: 0;
+}
+
+.table-bordered tr td:last-child, .table-bordered tr th:last-child {
+    border-right: 0;
+}
+
+.table-bordered th {
+    border-left: 1px solid #768085;
+    border-right: 1px solid #43535d;
+}
+
+.table-bordered td {
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #e5e5e5;
+}
+
+.table-striped tbody>tr:nth-child(odd)>td, .table-striped tbody>tr:nth-child(odd)>th {
+    background-color: #f2f2f2;
+}
+
+.table-striped tbody>tr:nth-child(even)>td, .table-striped tbody>tr:nth-child(even)>th {
+    background-color: #ffffff;
+}
+
+.table-hover.table-striped tbody tr:hover>td {
+    background-color: #E0E0E0;
+}
+
+.table-centering td, .table-centering th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table-centering td.align-left, .table-centering th.align-left {
+    text-align: left;
+}
+
+/* Кнопки */
+
+.button-small-rounded {
+    display: inline-block;
+    color: #FFF;
+    margin-left: 5px;
+    border: 0;
+    background: #268cd1;
+    border-radius: 10px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 14px;
+    font-weight: 600;
+}
+
+.button-small-rounded-inactive {
+    background: transparent;
+}
+
+a.button-small-rounded-inactive {
+    color: #268cd1;
+}
+
+a.button-small-rounded:hover {
+    color: #FFF;
+    background: #2381c0;
+    text-decoration: none;
+}
+
+.btn, .btn[disabled] {
+    display: inline-block;
+    padding: 5px 11px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #ffffff;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3);
+    background: #268cd1 none;
+    border: 0;
+    border-radius: 0;
+    filter: none;
+    box-shadow: none;
+}
+
+.btn[disabled]{
+	opacity: .40;
+}
+
+.btn .caret {
+    margin-top: 6px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active, .btn.active {
+    color: #ffffff;
+    background: #207bb9;
+}
+
+.btn-close {
+    background: #58666f;
+}
+
+.btn-close:hover, .btn-close:focus, .btn-close:active, .btn-close.active {
+    background: #687883;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success.active {
+    background-color: #51a351;
+}
+
+.btn-success {
+    background-color: #5bb75b;
+}
+
+.btn-danger {
+    background: #ca2a50;
+}
+
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active {
+    background: #ba274a;
+}
+
+.btn-group>.btn:first-child {
+    border-radius: 0;
+}
+
+/* Формы */
+
+input, button, select, textarea {
+    font-family: "Open Sans", sans-serif;
+}
+
+label, input, textarea {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    font-weight: normal;
+    font-size: 12px;
+    border-radius: 0;
+    margin-bottom: 7px;
+    padding: 4px 8px;
+    border: 1px solid #d5d5d5;
+    background: #f2f2f2;
+    height: 16px;
+    line-height: 16px;
+    color: #58666f;
+}
+
+select, input[type="file"] {
+    height: 26px;
+    line-height: 26px;
+}
+
+select {
+    background: #f2f2f2;
+    border: 1px solid #d5d5d5;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: -3px 3px 0 0;
+    vertical-align: middle;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    z-index: 2002;
+}
+
+.ui-datepicker { z-index: 2002 !important; }
+
+.dropdown-menu>li>a {
+    padding: 3px 8px;
+    line-height: 16px;
+}
+
+.bootstrap-select .btn {
+    color: #58666f;
+    padding: 4px 8px;
+    background: #f2f2f2;
+    border: 1px solid #d5d5d5;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+}
+
+.btn-group>.btn, .btn-group>.dropdown-menu, .btn-group>.popover {
+    font-size: 12px;
+}
+
+.bootstrap-select .btn:hover, .bootstrap-select .btn:focus {
+    background: #FFF;
+}
+
+.bootstrap-select.btn-group .btn .filter-option {
+    color: #58666f;
+    text-shadow: none;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li > a {
+    min-height: 16px;
+}
+
+.form-description {
+    color: #b2bdc4;
+    font-weight: normal;
+}
+
+.input-date input, input.input-date {
+    background-image: url("../img/icon-calendar.png");
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+}
+
+.bootstrap-select.btn-group .btn .caret {
+    right: 6px;
+}
+
+.bootstrap-select.btn-group .btn .filter-option {
+    left: 8px;
+    right: 18px;
+}
+
+.disabled, .disabled input, input[disabled] {
+    color: #abb2b7;
+}
+
+/* Datatable */
+
+.datatable-title {
+    font-weight: normal;
+}
+
+.dataTables_wrapper {
+    margin: 3px 0 12px;
+}
+
+.dataTables_filter label {
+    margin: 0;
+}
+
+.dataTables_filter input {
+    margin: 0;
+    background: #FFF url("../img/icon-search-small.png") 9px 50% no-repeat;
+    padding-left: 29px;
+    width: 474px;
+}
+
+.dataTables_scrollHead {
+    display: none;
+}
+
+.dataTables_scroll {
+    border: 1px solid #d5d5d5;
+    border-top: 0;
+}
+
+.dataTables_scrollBody,
+table.dataTable tr.odd,
+table.dataTable tr.even {
+    background: #F2F2F2;
+}
+
+.dataTables_scrollBody {
+    max-height: 250px;
+}
+
+table.dataTable td {
+    border: 0;
+}
+
+table.dataTable label {
+    margin: 0;
+}
+
+.help-block {
+    margin: 0;
+}
+
+.help-block ul {
+    margin: 0;
+    list-style: none none;
+    font-weight: normal;
+}
+
+.control-group.error .checkbox, .control-group.error .radio, .control-group.error input, .control-group.error select, .control-group.error textarea,
+.control-group.warning .checkbox, .control-group.warning .radio, .control-group.warning input, .control-group.warning select, .control-group.warning textarea {
+    color: #58666f;
+}
+
+.control-group.error input, .control-group.error select, .control-group.error textarea,
+.control-group.warning input, .control-group.warning select, .control-group.warning textarea,
+.control-group input.error{
+    background-color: #fae9ed;
+    border-color: #d3b2ba;
+}
+
+.control-group.error .control-label, .control-group.error .help-block, .control-group.error .help-inline,
+.control-group.warning .control-label, .control-group.warning .help-block, .control-group.warning .help-inline,
+.control-group .control-label.error,
+.errorMessage{
+    color: #ca2a50;
+}
+
+/* Модальные окна */
+
+.modal-backdrop {
+    background: #58666f;
+    opacity: .5;
+}
+
+.modal {
+    box-shadow: none;
+    border-radius: 0;
+    border: 10px solid rgba(73, 85, 82, .17);
+    width: 543px;
+    margin-left: -271px;
+}
+
+.modal-body {
+    max-height: 550px;
+}
+
+.modal form {
+    margin: 0;
+}
+
+.close-modal {
+    float: right;
+    margin-top: 8px;
+}
+
+.modal-header {
+    border-bottom-color: #d5d5d5;
+}
+
+.modal .form-actions {
+    padding: 0;
+    margin: 20px 0 7px 0;
+    background: transparent;
+    border: 0;
+}
+
+/* Модальные окна — Редактирование счёта */
+
+#modal-billing-update {
+    font-size: 12px;
+}
+#modal-billing-update .input-notification-error{
+    width:130px;
+}
+#modal-billing-update .left input, #modal-billing-update .left label{
+    float:left;
+}
+#modal-billing-update .left input{
+    margin-top:2px;
+}
+
+.form-billing-update {
+    margin-bottom: 0;
+}
+
+#modal-billing-update .bootstrap-select {
+    width: 322px;
+}
+
+#modal-billing-update .input-billing-date-set,
+#modal-billing-update .input-billing-sum,
+#modal-billing-update .input-billing-date-paid {
+    float: left;
+    margin-right: 7px;
+}
+
+#modal-billing-update .input-date input {
+    width: 138px;
+}
+
+#modal-billing-update .input-billing-sum input {
+    width: 134px;
+}
+
+#modal-billing-update textarea, #modal-billing-update-platform textarea {
+    width: 495px;
+    max-width: 495px;
+    min-height: 60px;
+}
+
+#modal-billing-update .btn-danger {
+    float: right;
+}
+
+/* Модальные окна — Корректировка */
+
+#modal-campaign-correction {
+    width: 800px;
+    margin-left: -400px !important;
+}
+
+#modal-campaign-correction .modal-body {
+    background: #f2f2f2;
+    text-align: center;
+}
+
+#modal-campaign-correction form {
+    margin-bottom: 10px;
+}
+
+#modal-campaign-correction input, #modal-campaign-correction label {
+    color: #43535d;
+    font-weight: 600;
+}
+
+#modal-campaign-correction input{
+    width: 24px;
+}
+
+#modal-campaign-correction select, #modal-campaign-correction div.selectpick {
+    width: 150px;
+}
+
+body>div.bootstrap-select{
+    z-index: 3003;
+}
+
+
+#modal-campaign-correction input, #modal-campaign-correction select, #modal-campaign-correction div.selectpick {
+    /*width: 24px;*/
+    background: #FFF;
+    margin: 0 5px 0 2px;
+}
+
+#modal-campaign-correction input.input-date{
+    width: 65px;
+}
+
+#modal-campaign-correction .form-actions {
+    margin: 16px 0 0 0;
+}
+
+#modal-campaign-correction a {
+    margin-right: 3px;
+}
+
+#correction-grid table.items {
+    width: 100%;
+}
+
+/* Модальные окна — Формирование отчёта */
+
+#modal-campaign-getreport .modal-body {
+    background: #f2f2f2;
+    padding: 0;
+    font-weight: normal;
+    overflow-y: visible;
+}
+
+#modal-campaign-getreport form {
+    margin: 0;
+}
+
+#modal-campaign-getreport .getreport-row {
+    background: url("../img/icon-excel.png") 10px 10px no-repeat;
+    padding: 10px 20px 10px 52px;
+    line-height: 30px;
+    min-height: 30px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+#modal-campaign-getreport .getreport-row:last-child {
+    border-bottom: 0;
+}
+
+#modal-campaign-getreport .getreport-row .btn {
+    margin-left: 12px;
+}
+
+#modal-campaign-getreport .getreport-row label {
+    display: inline;
+    margin-right: 8px;
+}
+
+#modal-campaign-getreport .getreport-row label:last-of-type {
+    margin-right: 0;
+}
+
+#modal-campaign-getreport .input-date {
+    width: 88px;
+    margin: 0 0 0 8px;
+    background: #FFF;
+}
+
+#modal-campaign-getreport .bootstrap-select {
+    margin: 0 0 0 10px;
+    width: 166px;
+}
+
+#modal-campaign-getreport .bootstrap-select .btn {
+    background: #FFF;
+    margin: 0;
+}
+
+#modal-campaign-getreport .bootstrap-select .btn:hover, #modal-campaign-getreport .bootstrap-select .btn:focus {
+    background: #F2F2F2;
+}
+
+#modal-campaign-reports  label, #modal-campaign-reports .period {
+	margin-left: 30px;
+}
+
+#modal-campaign-reports .full {
+	margin-left: 80px;
+}
+
+#modal-campaign-reports #campaignsReports_period .btn {
+	margin-left: 20px;
+	margin-bottom: 7px;
+}
+#modal-campaign-reports .input-date {
+    width: 88px;
+}
+
+/* Модальные окна — Редактирование новости */
+
+#modal-news-settings {
+    width: 560px;
+}
+
+#modal-news-settings .control-group {
+    margin-bottom: 12px!important;
+}
+
+#modal-news-settings input[type=text] {
+    width: 495px;
+    margin-bottom: 0;
+}
+
+.modal-input {
+    width: 495px;
+    margin-bottom: 0;
+}
+select.modal-input {
+    width: 513px;
+}
+
+#modal-news-settings .dataTables_filter input {
+    margin: 0;
+    width: 474px;
+}
+
+#modal-news-settings select, #modal-news-settings .bootstrap-select {
+    width: 324px;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+#modal-news-settings #news-reject {
+    width: 29px;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+#modal-news-settings #teaser-active-label {
+    margin-top: 12px;
+}
+
+/* Модальные окна — Редактирование рекламной площадки */
+
+#modal-platforms-update .platforms-update-checkboxes {
+    margin: 6px 0 10px 0;
+}
+
+#modal-platforms-update .platforms-update-checkboxes label {
+    margin-right: 20px;
+}
+#modal-platforms-update .platforms-update-checkboxes label, #modal-platforms-update .platforms-update-checkboxes input {
+    float:left;
+}
+
+#modal-platforms-update .platforms-update-checkboxes input {
+    margin-top:2px;
+}
+
+.input150, #modal-platforms-update .input150 {
+    width: 150px;
+}
+.input150p, #modal-platforms-update .input150p {
+    width: 132px;
+}
+
+#modal-platforms-update #ClickCost_cost {
+    width: 80px;
+}
+
+#modal-platforms-update .clickcost {
+    margin-left: 10px;
+}
+
+/* Модальные окна — Редактирование рекламной площадки */
+
+#modal-teaser-settings .teaser-settings-edit-image img {
+    float: left;
+    margin: 0 20px 15px 0;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#modal-teaser-settings .browse-button {
+    margin-left: 120px;
+    position: relative;
+    margin-bottom: 7px;
+}
+
+#modal-teaser-settings .fake-browse-button {
+    width: 170px;
+    height: 17px;
+    overflow: hidden;
+}
+
+#modal-teaser-settings .browse-button input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 190px;
+    height: 27px;
+    cursor: pointer;
+    opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+#users-form .browse-button input{
+    margin-top: -27px;
+    left: 0;
+    top: 0;
+    width: 190px;
+    height: 27px;
+    cursor: pointer;
+    opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+
+#modal-teaser-settings .browse-button:hover .fake-browse-button {
+    color: #ffffff;
+    background: #207bb9;
+}
+
+#modal-teaser-settings #teaser-active-label {
+    margin: 6px 0 10px;
+}
+
+#modal-teaser-settings #Teasers_title, #modal-teaser-settings #Teasers_description {
+    width: 478px;
+}
+
+#modal-teaser-settings #teaser-forbid_filter input {
+    width: 474px;
+}
+
+/* Модальные окна — Редактирование рекламной кампании */
+
+#modal-campaign-settings .checkbox-wrapper {
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+#modal-campaign-settings #Campaigns_name, #modal-campaign-settings #Campaigns_comment {
+    width: 495px;
+}
+
+#modal-campaign-settings #Campaigns_comment {
+    margin-bottom: 18px;
+}
+
+#modal-campaign-settings .date-wrapper {
+    float: left;
+    margin-right: 4px;
+}
+
+#modal-campaign-settings .date-wrapper input {
+    width: 102px;
+}
+
+#modal-campaign-settings .campaign-settings-limit {
+    margin: 21px 0 0 0;
+}
+
+#modal-campaign-settings .campaign-settings-daylimit {
+    margin: 1px 0 0 0;
+}
+
+#modal-campaign-settings .form-description {
+    margin-top: 13px;
+}
+
+/* Модальные окна — Редактирование оффера */
+
+#modal-offers-settings input[type="text"] {
+    margin-bottom: 0;
+}
+
+#modal-offers-settings .date-field {
+	margin-bottom: 0;
+    width: 200px;
+    margin-right: 20px;
+}
+
+#modal-offers-settings #Offers_name, #modal-offers-settings #Offers_description{
+	width: 495px;
+}
+
+#modal-offers-settings #Offers_action_id {
+	width: 456px;
+}
+
+#modal-offers-settings .offers_limits_group {
+	padding-top: 10px;
+	padding-right: 30px;
+}
+
+#modal-offers-settings #Offers_use_limits {
+    line-height: 26px;
+    padding-top: 5px;
+}
+
+#modal-offers-settings .limits-field {
+    width: 100px;
+}
+
+.offer-image-container .del-image-btn{
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	background-image: url(/img/icons-16.png);
+	background-repeat: no-repeat;
+	background-position: 30px 30px;
+	border: 1px solid red;
+	color: red;
+	font-weight: bolder;
+	position: relative;
+	top: -95px;
+	float: right;
+}
+
+#offers-webmasters-filter-select input{
+	height: inherit;
+	line-height: inherit;
+}
+
+/* Контейнер */
+
+.container {
+    width: 1003px;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+/* Шапка */
+
+.page-header {
+    color: #ebebeb;
+    margin: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+    background: url("../img/page-bg.png") repeat-x
+}
+
+.page-header a {
+    color: #ebebeb;
+}
+
+.page-header-row-inner {
+    /*width: 1053px;*/
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+
+/* Шапка — первый ряд */
+
+.page-header-row1 {
+    height: 54px;
+}
+
+.site-title {
+    font-size: 22.5px;
+    line-height: 54px;
+    margin: 0;
+    color: #ebebeb;
+}
+
+.nav-top {
+    float: right;
+    line-height: 32px;
+    font-weight: 600;
+    height: 32px;
+    list-style: none none;
+    margin: 0;
+}
+
+.nav-top li {
+    float: right;
+}
+
+.nav-top a {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+}
+
+.nav-top a:hover {
+    text-decoration: none;
+    background: #66737b;
+}
+
+.nav-top a.active, .nav-top a:active {
+    background: #f2f2f2;
+    color: #43535d;
+}
+
+.nav-top a.active .icon-cog, .nav-top a:active .icon-cog {
+    background-position: -60px -20px;
+}
+
+/* Шапка — второй ряд */
+
+.page-header-row2 {
+    height: 46px;
+}
+
+.navbar {
+    margin: 0;
+}
+
+.navbar-inner {
+    min-height: 46px;
+    padding: 0;
+    background: transparent none;
+    border: 0;
+    border-radius: 0;
+    filter: none;
+    box-shadow: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.navbar .nav>li>a {
+    padding: 13px 26px;
+    color: #ebebeb;
+    text-shadow: none;
+}
+
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+    color: #207bb9;
+    background-color: #f2f2f2;
+    box-shadow: none;
+}
+
+.navbar .nav>li>a:focus, .navbar .nav>li>a:hover {
+    color: #ebebeb;
+    background: #207bb9;
+}
+
+/* Шапка — третий ряд — Рекламные кампании пользователя */
+.page-header-row3 {
+    background: #58666f;
+    border-top: 2px solid #FFF;
+}
+
+.page-header-row3 .table-campaign-header {
+    border-bottom: 0;
+}
+
+/* Шапка — третий ряд — Счета */
+
+.table-billing-header {
+    margin: 0;
+    width: auto;
+    border-right: 1px solid #768085;
+}
+
+.table-billing-header th {
+    padding: 5px 27px;
+    border-top: 0;
+    text-align: center;
+}
+
+.table-billing-header tr th:last-child {
+    border-right: 1px solid #43535d;
+}
+
+/* Основная часть */
+
+/* Основная часть — Шапка */
+
+.navbar-white{
+    background-color: #ffffff;
+    padding: 7px;
+}
+.navbar-white .navbar-inner{
+    min-height: 30px;
+}
+
+.navbar-white .navbar-inner .nav a{
+    color: #3b4d57;
+    padding: 5px;
+}
+.page-title-row {
+    margin: 15px 0;
+}
+
+.page-title-row-big {
+    margin: 35px 0;
+}
+
+h1.page-title {
+    margin: 0;
+}
+
+h1.page-title a {
+    font-weight: normal;
+}
+
+.title-right-btn {
+    float: right;
+    margin: 8px 0 0 10px;
+}
+
+input.main-search {
+    border: 1px solid transparent;
+    background: transparent url("../img/icon-search.png") 10px 50% no-repeat;
+    box-shadow: none;
+    line-height: 37px;
+    height: 37px;
+    padding: 0 7px 0 40px;
+    width: 0;
+    font-size: 18px;
+    margin: -3px 0 0 0;
+    color: #F2F2F2;
+    position: absolute;
+    z-index: 1050;
+}
+
+h3 input.main-search {
+    margin-top: 0;
+}
+
+input.main-search:hover {
+    border-color: #d6d6d6;
+}
+
+input.main-search:focus {
+    border-color: #d6d6d6;
+    background-color: #FFF;
+    color: #43535d;
+    width: 306px;
+    transition: color linear 0.2s, width linear 0.2s;
+}
+
+/* Основная часть — Площадки */
+
+.platforms-generatereport {
+    color: #43535d;
+    float: right;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 40px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.platform-information-table a {
+    color: #58666f;
+}
+.platform-information-table a.white {
+    color: #ffffff;
+    float:left;
+}
+
+.platform-information-table .table {
+    border: 1px solid #FFF;
+    margin-bottom: 10px;
+}
+
+.platform-information-table .table th, .campaign-information-table .table th{
+    white-space: nowrap;
+}
+
+.platform-information-table .table th, .platform-information-table .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.platform-information-table .table-striped tbody>tr:nth-child(odd)>td, .platform-information-table .campaign.odd td, .campaign-information-table .news.odd:not(.error) td, .campaign-information-table .offers.odd td, .table-blue .odd td{
+    background-color: #d6eaff;
+}
+
+.platform-information-table .table-striped tbody>tr:nth-child(even)>td, .platform-information-table .campaign.even  td, .campaign-information-table .news.even:not(.error) td, .campaign-information-table .offers.even td, .table-blue .even td{
+    background-color: #f2f2f2;
+}
+
+.platform-information-table select, .platform-information-table .campaign select, .campaign-information-table  select{
+    width: 100px!important;
+    background: #FFF!important;
+    margin: 8px 0 0 0;
+}
+
+.teaser td{
+    background-color: #ffffff;
+    border-top: 1px solid #e5e5e5;
+}
+
+.platform-id {
+    margin: 12px 24px;
+    color: #43535d;
+}
+
+#campaign-correction {
+	margin-top: 7px;
+    float: right;
+}
+
+/* Основная часть — Рекламные кампании */
+
+.campaign-user {
+    border: 1px solid #FFF;
+    border-top: 0;
+}
+
+/* Основная часть — Клиенты с активными рекламными кампаниями */
+
+.campaign {
+    border: 1px solid #FFF;
+    margin-bottom: 39px;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .1);
+}
+
+/* Основная часть — Клиенты с активными рекламными кампаниями — "Заголовок" таблицы */
+
+.table-campaign-header {
+    background-color: #58666f;
+    border: 0;
+    border-bottom: 2px solid #FFF;
+    color: #ebebeb;
+    margin: 0;
+}
+
+.table-campaign-header a {
+    color: #ebebeb;
+}
+
+.table-campaign-header th {
+    vertical-align: middle;
+    line-height: 17px;
+    padding: 0 12px;
+    border-top: 0;
+}
+
+.table-campaign-header td {
+    background: #58666f;
+}
+
+.table-campaign-header th.active {
+    background-color: #f2f2f2;
+    color: #58666f;
+    border-left: 0;
+    border-right: 0;
+}
+
+.table-campaign-header th.active a {
+    color: #58666f;
+}
+
+.table-campaign-header .campaign-logo-cell {
+    width: 50px;
+    padding: 0;
+}
+
+.table-campaign-header .campaign-owner-cell {
+    border-right: 1px solid #43535d;
+}
+
+.table-campaign-header .campaign-num-cell {
+    width: 171px;
+    border-right: 1px solid #43535d;
+    border-left: 1px solid #768085;
+}
+
+.table-campaign-header .campaign-addnew-cell {
+    border-left: 1px solid #768085;
+    width: 224px;
+    color: #FFF;
+    text-align: center;
+}
+
+.table-campaign-header .campaign-owner-cell .campaign-owner {
+    font-size: 14px;
+}
+
+/* Основная часть — Клиенты с активными рекламными кампаниями — Таблица */
+
+.table-campaign {
+    margin: 0;
+}
+
+.table-campaign th.bounce-rate{
+    width: 100px;
+}
+
+.table-campaign tbody td, .table-campaign thead th{
+    vertical-align: middle;
+    text-align: center;
+}
+.table-campaign tbody td:first-child, .table-campaign thead th:first-child{
+    text-align: left;
+}
+
+.table-campaign tbody td:first-child, .table-campaign tbody td:first-child a {
+    font-size: 14px;
+    color: #1072b4;
+}
+
+.table-campaign tr.inactive td, .table-campaign tr.inactive td a {
+    color: #bec1c3;
+    border-right: 0;
+    border-left: 0;
+}
+
+
+/* Основная часть — Счета */
+
+.section-billing {
+    margin: 30px 0 75px 0;
+}
+
+.section-billing .title-with-button {
+    margin-bottom: 22px;
+}
+
+.table-billing td, .table-billing th {
+    text-align: center;
+}
+
+.table-billing tr td:nth-child(5) {
+    text-align: left;
+    width: 96px;
+}
+
+.table-billing tr:last-child td {
+    border-bottom: 1px solid #FFF;
+}
+
+.table-billing tr td:first-child {
+    border-left: 1px solid #FFF;
+}
+
+.table-billing tr td:last-child {
+    border-right: 1px solid #FFF;
+}
+
+.billing-summary {
+    font-weight: 600;
+    color: #a0a8ae;
+}
+
+.billing-debt {
+    color: #ca2a50;
+}
+
+.billing-paid {
+    color: #1072b4;
+}
+
+.billing-total {
+    color: #58666f;
+}
+
+/* Основная часть — Кампания */
+
+.campaign-status-bar {
+    margin: 17px 0;
+    line-height: 20px;
+}
+
+.campaign-status-info {
+    float: right;
+    text-align: right;
+    font-weight: normal;
+    color: #268cd1;
+    font-size: 12px;
+}
+
+.campaign-status {
+    margin-left: 15px;
+    padding: 0 22px;
+}
+
+.campaign-description {
+    margin: 10px 0;
+    color: #43535d;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.campaign-visits-limit {
+    margin: 10px 0;
+    color: #43535d;
+}
+
+.campaign-visits-limit .separator {
+    margin: 0 12px;
+}
+
+/* Основная часть — Кампания — Шапка */
+
+.campaign-information {
+    background: #FFF;
+}
+
+.campaign-information .nav {
+    margin-bottom: 0px;
+}
+
+.campaign-information-header {
+    padding: 15px 15px 0;
+}
+
+.campaign-information-header-row {
+    padding: 15px 15px;
+}
+
+.campaign-information-header-row1 {
+    padding-bottom: 13px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.campaign-generatereport {
+    color: #43535d;
+    float: right;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 40px;
+    background: url("../img/icon-excel.png") 100% 0 no-repeat;
+    font-weight: 600;
+}
+
+.campaign-reports {
+	color: #43535d;
+    float: right;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    padding-right: 40px;
+    font-weight: 600;
+}
+
+.campaign-information-header-row2 {
+    padding: 10px 0;
+    position: relative;
+}
+
+.campaign-information-header-title {
+    margin: 0 30px 0 0;
+}
+
+.campaign-information-header-title .icon-search-header {
+    margin-top: 3px;
+    margin-left: 7px;
+}
+
+.campaign-information-header-statuses {
+    line-height: 40px;
+    position: absolute;
+    left: 255px;
+    top: 11px;
+}
+
+/* Основная часть — Кампания — Таблица */
+a.teaser-link, a.campaign-story-outlink, a.campaign-story-title, div.campaign-story-description, .break-word {
+	word-wrap: break-word; 
+	word-break: break-word;
+	white-space: normal;
+}
+
+.campaign-information-table .table th:nth-child(2), .campaign-information-table tr td:nth-child(2) {
+    text-align: left;
+}
+
+.campaign-story-title, .campaign-story-outlink,
+.campaign-story-exurl, .campaign-story-description, .user-story-title {
+    font-weight: 300;
+    color: #58666f;
+}
+.user-story-title i{
+    margin:0;
+}
+
+.campaign-story-title {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Основная часть — Кампания — Таблица — Тизеры */
+
+.teaser a  {
+    color: #1b6da4;
+}
+
+.teaser-image {
+    max-width: 100px;
+    max-height: 100px;
+    float: left;
+    margin-right: 12px;
+}
+
+/* Основная часть — Кампания — Графики */
+
+.campaign-information-charts-container {
+    background: #FFF;
+    padding: 15px;
+    margin: 10px 0 1px 0;
+}
+
+.campaign-information-chart {
+    padding: 0 12px;
+    background: #f2f2f2;
+    border: 1px solid #d5d5d5;
+    margin-bottom: 15px;
+}
+
+.campaign-information-chart:last-child {
+    margin-bottom: 0;
+}
+
+.campaign-information-chart-title {
+    border-bottom: 1px solid #d5d5d5;
+    margin-top: 3px;
+    padding-bottom: 5px;
+}
+
+ul.campaign-information-chart-legend {
+    list-style: none none;
+    margin: 0 0 40px 0;
+    font-weight: 600;
+}
+
+ul.campaign-information-chart-legend .icon-12 {
+    margin: 4px 5px 0 2px;
+}
+
+.campaign-information-chart-chart {
+    font-weight: normal;
+}
+
+/* Основная часть — Новости для модерации */
+
+.moderated-table.table-striped tbody>tr:nth-child(odd)>td {
+    background-color: #d6eaff;
+}
+
+.moderated-title, .moderated-title-new {
+	font-size: 14px;
+	font-weight: normal;
+	color: #58666f;
+}
+
+.moderated-title-new {
+	font-weight: bold;
+}
+
+/* Основная часть — Настройки */
+
+.admin-settings-block {
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+
+.admin-settings-block h1 {
+    margin-bottom: 35px;
+}
+
+.admin-settings-refresh {
+    margin-top: 15px;
+    font-size: 11px;
+}
+
+.admin-settings-refresh .btn {
+    margin-right: 15px;
+}
+
+.table-tags thead th:nth-child(1), .table-tags tbody td:nth-child(1) {
+    text-align: left;
+}
+
+/* Футер */
+.page-footer {
+    margin-top: 39px;
+    color: #58666f;
+    text-align: center;
+    font-weight: normal;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .75);
+}
+
+#top-link {
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 0px;
+    background: url("../img/icon-scrolltotop.png") no-repeat;
+    width: 102px;
+    height: 101px;
+}
+
+div.container table.items{
+    width:100%;
+}
+
+table.items, table.items table.items{
+    border-collapse: inherit;
+}
+.inline{
+    display:inline;
+}
+.modal-body .row{
+    margin:0;
+    margin-bottom:0!important;
+}
+.date-wrapper .input-notification-error {
+    width:100px;
+}
+.modal{
+    left: 50% !important;
+    margin-left: -280px !important;
+}
+.datatable label, .datatable input{
+    float:left;
+}
+.datatable input{
+    margin-top:	2px;
+}
+.teasers-line .filter-option{
+    left:8px!important;
+}
+.teasers-line .filter-option{
+    left:8px!important;
+}
+.campaign-information-header-row2 .btnf{
+    background: none repeat scroll 0 0 #268CD1;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    color: #FFFFFF;
+    display: inline-block;
+    filter: none;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 5px 11px;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3);
+}
+.campaign-information-header-row2 .btnf:hover{
+    color: #ffffff;
+    background: #207bb9;
+}
+.clear{
+    clear:both;
+}
+div.login{
+    margin: 20px auto !important;
+    position: static;
+    width: 265px;
+}
+#login-form .error .errorMessage{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    padding: 2px 0 2px 22px;
+    border: medium none;
+    color: #FC1818 !important;
+    background: url("/admin/js/ajaxform/images/icons/cross_circle.png") no-repeat scroll 0 0 #fff;
+}
+
+
+#login-form .rememberMe label, #login-form .rememberMe input{
+    float:left;
+}
+#login-form .rememberMe input{
+    margin-top:2px;
+}
+#news-add{
+    margin-left:10px;
+}
+
+.table-news tr.inactive td, .table-news tr.inactive td a {
+    color: #bec1c3;
+}
+
+
+#modal-platforms-update textarea {
+    height: 100px;
+    width: 90%;
+}
+
+.platform-information-table tr.inactive td, .platform-information-table tr.inactive td a {
+    color: #bec1c3;
+}
+
+a.dashed{
+	display: inline-block; 
+	border-bottom: 1px dashed; 
+	margin-bottom: 7px; 
+	
+}
+a.dashed:hover{
+	text-decoration: none;
+}
+
+.caption{
+    vertical-align: text-bottom;
+}
+
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #428bca;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+    background-color: #5cb85c;
+}
+
+.w40{
+    width: 40px;
+}
+
+.m5l{
+    margin-left: 5px;
+}
+
+.m21t{
+   margin-top: 21px;
+}
+
+.m12t{
+    margin-top: 12px;
+}
+
+.min{
+    white-space: nowrap;
+    width: 1px;
+}
+
+.offer-notification {
+	padding-top: 5px;
+	padding-botton: 5px;
+	border-top: 1px solid #F2F2F2;
+}
+
+textarea.box{
+    width: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    resize: vertical;
+}
+.errorSummary p {
+    font-weight: bolder;
+}
+
+/*bootstrap-table override*/
+#campaigns-bydate-grid .fixed-table-container thead th .sortable {
+    padding-right: 15px !important;
+}
+
+#campaigns-bydate-grid .fixed-table-container thead th .th-inner {
+    white-space: normal !important;
+}
+
+#campaigns-bydate-grid .bootstrap-table .table,
+#campaigns-bydate-grid .bootstrap-table .table > tbody > tr > th,
+#campaigns-bydate-grid .bootstrap-table .table > tfoot > tr > th,
+#campaigns-bydate-grid .bootstrap-table .table > thead > tr > td,
+#campaigns-bydate-grid .bootstrap-table .table > tbody > tr > td,
+#campaigns-bydate-grid .bootstrap-table .table > tfoot > tr > td {
+    padding: 5px !important;
+}
+
+div.bootstrap-select {
+    margin-bottom: 7px;
+}
+
+select.fix {
+    margin-top: 3px;
+}
+
+@media (min-width: 1200px) {
+    .container.adaptive {
+        width: 98%;
+    }
+}
+
+div.ajax-sending {
+    background-image: url('images/loading.gif')!important;
+    background-position:  center center!important;
+    background-repeat: no-repeat!important;
+    opacity: 1;
+}
+div.ajax-sending * {
+    opacity: .8;
+}
+
+ul.multicolumn li{
+    width: 250px;
+    float: left;
+}
+
+.well {
+    margin: 0 auto;
+}

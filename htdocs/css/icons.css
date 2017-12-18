@@ -1,0 +1,211 @@
+.icon-16 {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-image: url("../img/icons-16.png");
+}
+
+
+
+.icon-cog {
+    background-position: 0 0;
+}
+
+.icon-signout {
+    background-position: -20px 0;
+}
+
+.icon-add {
+    background-position: -40px 0;
+}
+
+.icon-addad {
+    background-position: -60px 0;
+    margin: 0 4px 0 0;
+}
+
+.icon-billing-out {
+    background-position: -80px 0;
+    margin: 0 5px 0 0;
+}
+
+.icon-billing-in {
+    background-position: -100px 0;
+    margin: 0 5px 0 0;
+}
+
+.icon-billing-status-good {
+    background-position: -120px 0;
+    margin: 0 5px 0 0;
+}
+
+.icon-billing-status-bad {
+    background-position: -140px 0;
+    margin: 0 5px 0 0;
+}
+
+.icon-close {
+    background-position: 0 -20px;
+}
+
+.icon-close:hover {
+    background-position: -20px -20px;
+}
+
+.icon-excel {
+    background-position: -40px -20px;
+    margin: 0 5px 0 0;
+}
+
+.icon-alert {
+    background-position: -80px -20px;
+    width: 17px;
+    margin: -1px 5px 0 0;
+}
+
+.icon-14 {
+    background-image: url("../img/icons-14.png");
+    margin-right: 5px;
+}
+
+.icon-close-white {
+    background-position: 0 0;
+}
+
+.icon-ok-sign {
+    background-position: -20px 0;
+}
+
+.icon-trash {
+    background-position: -40px 0;
+    margin-top: 0;
+}
+
+.icon-calendar {
+    background-position: -60px 0;
+    margin-top: 0;
+}
+
+.icon-cog-dark {
+    background-position: -80px 0;
+    margin: 3px 2px 0 0;
+}
+
+.icon-refresh {
+    background-position: -100px 0;
+    margin: 2px 0 0 0;
+}
+
+.icon-12 {
+    background-image: url("../img/icons-12.png");
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+}
+
+.icon-status-red {
+    background-position: 0 0;
+}
+
+.icon-status-green {
+    background-position: -20px 0;
+}
+
+.icon-point-blue {
+    background-position: -40px 0;
+}
+
+.icon-point-orange {
+    background-position: -60px 0;
+}
+
+.icon-point-green {
+    background-position: -80px 0;
+}
+
+.icon-image {
+    background-position: -100px 0;
+    width: 13px;
+    margin: 2px 5px 0 0;
+}
+.icon-point-grath {
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+}
+
+.icon-nav-num {
+    width: 12px;
+    height: 12px;
+    background: #d6eaff none;
+    text-shadow: #FFF 1px 1px 0;
+    font-size: 12px;
+    color: #58666f;
+    text-align: center;
+    font-weight: bold;
+    padding: 4px;
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+/*notifications & offers requests activity icon*/
+.nav-num-notifications {
+	height: 12px;
+    background: red none;
+    text-shadow: #58666f 1px 1px 0;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 4px;
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.active .icon-nav-num {
+    background: #1f7bb8;
+    color: #FFF;
+    text-shadow: none;
+}
+
+.icon-search-header {
+    width: 23px;
+    height: 24px;
+    line-height: 24px;
+    background: url("../img/icon-search.png") 0 0;
+    margin-top: 11px;
+    margin-left: 5px;
+}
+
+.icon-sort {
+    width: 7px;
+    height: 10px;
+    line-height: 12px;
+    margin-top: 4px;
+    margin-left: 5px;
+    background: url("../img/icons-sort.png") 0 0;
+}
+
+.icon-sort-up {
+    background-position: -7px 0;
+}
+
+.icon-sort-down {
+    background-position: -14px 0;
+}
+
+.icon-cog-big {
+    width: 21px;
+    height: 21px;
+    background: url("../img/icon-cog-big.png") 0 0;
+    margin: 10px 5px 0 0;
+}
+
+
+.icon-pencil {
+    margin-top: 3px!important;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background: url("../img/icon-pencil.png") 0 0 no-repeat;
+
+}
